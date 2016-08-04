@@ -1,4 +1,4 @@
-FROM meteorhacks/meteord:base
+FROM kadirahq/meteord:base
 MAINTAINER MeteorHacks Pvt Ltd.
 
 COPY scripts/install_binbuild_tools.sh $METEORD_DIR/install_binbuild_tools.sh
