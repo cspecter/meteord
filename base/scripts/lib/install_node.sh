@@ -20,4 +20,4 @@ ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 apt-get -y install build-essential libssl-dev git python
 npm install -g node-gyp
 # pre-install node source code for faster building
-node-gyp install ${NODE_VERSION}
+node-gyp install 4.4.7
