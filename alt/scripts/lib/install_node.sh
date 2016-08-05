@@ -34,7 +34,7 @@ set -e
 ##apt-get -y install node-gyp
 #npm install -g node-gyp
 
-ARG NODE_MAJOR_VERSION=6
+NODE_MAJOR_VERSION=6
 
 # Based on https://github.com/sjevs/docker-node/
 
