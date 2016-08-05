@@ -31,7 +31,7 @@ ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 
 export USER=root
 export HOME=/tmp
-sudo npm install -g node-gyp
+su root npm install -g node-gyp
 
 #npm install --global npm@3
 
