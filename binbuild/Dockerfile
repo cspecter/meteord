@@ -1,4 +1,4 @@
-FROM abernix/meteord:base
+FROM node:4.4.7-wheezy
 MAINTAINER MeteorHacks Pvt Ltd.
 
 COPY scripts/install_binbuild_tools.sh $METEORD_DIR/install_binbuild_tools.sh
