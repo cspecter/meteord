@@ -29,7 +29,7 @@ ln -sf /opt/nodejs/bin/node /usr/bin/node
 ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 
 # for npm module re-building
-apt-get -y install build-essential libssl-dev git python
+apt-get -y install build-essential libssl-dev libicu-dev git python
 npm config set python /usr/bin/python2.7
 npm install -g node-gyp
 apt-get install node-gyp
