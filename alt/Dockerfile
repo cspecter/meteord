@@ -1,4 +1,4 @@
-FROM schlez/docker-node-gyp:latest
+FROM flubba86/alpine-pipeline-node-gyp:latest
 MAINTAINER Chad Specter
 
 ENV METEORD_DIR /opt/meteord
