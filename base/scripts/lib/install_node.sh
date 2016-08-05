@@ -35,4 +35,4 @@ apt-get -y install node-gyp
 npm install -g --unsafe-perm node-gyp
 # pre-install node source code for faster building
 node-gyp install 4.4.7
-npm install -g talib
+npm install -g --unsafe-perm talib
