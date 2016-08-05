@@ -1,4 +1,4 @@
-FROM flubba86/alpine-pipeline-node-gyp:latest
+FROM debian:jessie
 MAINTAINER Chad Specter
 
 ENV METEORD_DIR /opt/meteord
