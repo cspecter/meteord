@@ -25,6 +25,8 @@ curl -L https://github.com/npm/npm/archive/v${NPM_VERSION}.tar.gz | \
     make && \
     make install
 
+npm install --global --unsafe-perm npm@3
+
 ln -sf /opt/nodejs/bin/node /usr/bin/node
 ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 
