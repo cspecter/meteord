@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e
 NODE_VERSION=4.4.7
+NPM_VERSION=3.10.6
 NODE_ARCH=x64
 
 # check we need to do this or not
@@ -14,8 +15,19 @@ rm -rf /opt/nodejs
 mv ${NODE_DIST} /opt/nodejs
 
 ln -sf /opt/nodejs/bin/node /usr/bin/node
-ln -sf /opt/nodejs/bin/npm /usr/bin/npm
-curl -L https://npmjs.org/install.sh | sh
+
+#ln -sf /opt/nodejs/bin/npm /usr/bin/npm
+#curl -L https://npmjs.org/install.sh | sh
+
+run rm -rf /usr/lib/node_modules/npm
+run mkdir -p /tmp/src
+workdir /tmp/src
+run curl -L https://github.com/npm/npm/archive/v${NPM_VERSION}.tar.gz | \
+    tar zxf - && \
+    cd npm-${NPM_VERSION} && \
+    make && \
+    make install
+
 # for npm module re-building
 apt-get -y install build-essential libssl-dev git python
 npm config set python /usr/bin/python2.7
