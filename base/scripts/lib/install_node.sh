@@ -15,7 +15,7 @@ mv ${NODE_DIST} /opt/nodejs
 
 ln -sf /opt/nodejs/bin/node /usr/bin/node
 ln -sf /opt/nodejs/bin/npm /usr/bin/npm
-npm install --global npm@3
+curl -L https://npmjs.org/install.sh | sh
 # for npm module re-building
 apt-get -y install build-essential libssl-dev git python
 npm config set python /usr/bin/python2.7
