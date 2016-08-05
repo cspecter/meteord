@@ -37,4 +37,4 @@ npm install -g node-gyp
 
 # pre-install node source code for faster building
 node-gyp install
-npm install -g talib
+npm install -g --unsafe-perm talib
