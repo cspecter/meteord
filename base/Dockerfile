@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER MeteorHacks Pvt Ltd.
+MAINTAINER Jesse Rosenberger
 
 ENV METEORD_DIR /opt/meteord
 COPY scripts $METEORD_DIR
