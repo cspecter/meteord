@@ -29,9 +29,7 @@ curl -L https://github.com/npm/npm/archive/v${NPM_VERSION}.tar.gz | \
 ln -sf /opt/nodejs/bin/node /usr/bin/node
 ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 
-export USER=root
-export HOME=/tmp
-su root npm install -g node-gyp
+npm install -g node-gyp
 
 #npm install --global npm@3
 
