@@ -18,6 +18,7 @@ ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 npm install --global npm@3
 # for npm module re-building
 apt-get -y install build-essential libssl-dev git python
-sudo npm install -g --unsafe-perm node-gyp
+npm config set python /usr/bin/python2.7
+sudo npm install -g node-gyp
 # pre-install node source code for faster building
 node-gyp install 4.4.7
