@@ -32,7 +32,7 @@ set -e
 #
 ## for npm module re-building
 ##apt-get -y install node-gyp
-#npm install -g node-gyp
+npm install -g node-gyp
 
 NODE_MAJOR_VERSION=6
 
@@ -52,6 +52,8 @@ apt-get update && \
 
 
 npm install --production --no-optional && /bin/rm -rf /tmp/npm* /root/.npm /root/.node-gyp
+
+npm install -g node-gyp
 
 # pre-install node source code for faster building
 node-gyp install
