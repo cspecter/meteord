@@ -14,9 +14,6 @@ tar xvzf ${NODE_DIST}.tar.gz
 rm -rf /opt/nodejs
 mv ${NODE_DIST} /opt/nodejs
 
-ln -sf /opt/nodejs/bin/node /usr/bin/node
-
-#ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 #curl -L https://npmjs.org/install.sh | sh
 
 rm -rf /usr/lib/node_modules/npm
@@ -27,6 +24,9 @@ curl -L https://github.com/npm/npm/archive/v${NPM_VERSION}.tar.gz | \
     cd npm-${NPM_VERSION} && \
     make && \
     make install
+
+ln -sf /opt/nodejs/bin/node /usr/bin/node
+ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 
 # for npm module re-building
 apt-get -y install build-essential libssl-dev git python
