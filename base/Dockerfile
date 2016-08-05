@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM debian:jessie
 MAINTAINER MeteorHacks Pvt Ltd.
 
 ENV METEORD_DIR /opt/meteord
