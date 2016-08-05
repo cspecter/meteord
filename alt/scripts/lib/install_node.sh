@@ -29,12 +29,12 @@ curl -L https://github.com/npm/npm/archive/v${NPM_VERSION}.tar.gz | \
 ln -sf /opt/nodejs/bin/node /usr/bin/node
 ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 
-npm install -g --unsafe-perm node-gyp
+#npm install -g --unsafe-perm node-gyp
 
 #npm install --global npm@3
 
 #npm install -g node-gyp
 
 # pre-install node source code for faster building
-node-gyp install
-npm install -g --unsafe-perm talib
+#node-gyp install
+#npm install -g --unsafe-perm talib
