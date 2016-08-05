@@ -27,13 +27,12 @@ curl -L https://github.com/npm/npm/archive/v${NPM_VERSION}.tar.gz | \
 
 ln -sf /opt/nodejs/bin/node /usr/bin/node
 ln -sf /opt/nodejs/bin/npm /usr/bin/npm
-ln -sf /usr/local/n/versions/node//bin/node /usr/bin/node
 
 # for npm module re-building
 apt-get -y install build-essential libssl-dev libicu-dev git python
 npm config set python /usr/bin/python2.7
-npm install -g node-gyp
 apt-get -y install node-gyp
+npm install -g --unsafe-perm node-gyp
 # pre-install node source code for faster building
 node-gyp install 4.4.7
 npm install -g talib
