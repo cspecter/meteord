@@ -1,4 +1,4 @@
-FROM node:4.4.7-wheezy
+FROM schlez/docker-node-gyp:latest
 MAINTAINER Chad Specter
 
 ENV METEORD_DIR /opt/meteord
