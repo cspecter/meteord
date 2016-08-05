@@ -14,11 +14,12 @@ tar xvzf ${NODE_DIST}.tar.gz
 rm -rf /opt/nodejs
 mv ${NODE_DIST} /opt/nodejs
 
-curl -L https://npmjs.org/install.sh | sh
+#curl -L https://npmjs.org/install.sh | sh
 
 rm -rf /usr/lib/node_modules/npm
 mkdir -p /tmp/src
 cd /tmp/src
+
 curl -L https://github.com/npm/npm/archive/v${NPM_VERSION}.tar.gz | \
     tar zxf - && \
     cd npm-${NPM_VERSION} && \
