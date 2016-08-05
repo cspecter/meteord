@@ -27,6 +27,7 @@ curl -L https://github.com/npm/npm/archive/v${NPM_VERSION}.tar.gz | \
 
 ln -sf /opt/nodejs/bin/node /usr/bin/node
 ln -sf /opt/nodejs/bin/npm /usr/bin/npm
+ln -sf /usr/local/n/versions/node//bin/node /usr/bin/node
 
 # for npm module re-building
 apt-get -y install build-essential libssl-dev libicu-dev git python
