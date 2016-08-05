@@ -19,10 +19,10 @@ ln -sf /opt/nodejs/bin/node /usr/bin/node
 #ln -sf /opt/nodejs/bin/npm /usr/bin/npm
 #curl -L https://npmjs.org/install.sh | sh
 
-run rm -rf /usr/lib/node_modules/npm
-run mkdir -p /tmp/src
+rm -rf /usr/lib/node_modules/npm
+mkdir -p /tmp/src
 workdir /tmp/src
-run curl -L https://github.com/npm/npm/archive/v${NPM_VERSION}.tar.gz | \
+curl -L https://github.com/npm/npm/archive/v${NPM_VERSION}.tar.gz | \
     tar zxf - && \
     cd npm-${NPM_VERSION} && \
     make && \
