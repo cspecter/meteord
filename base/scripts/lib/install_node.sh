@@ -21,7 +21,7 @@ ln -sf /opt/nodejs/bin/node /usr/bin/node
 
 rm -rf /usr/lib/node_modules/npm
 mkdir -p /tmp/src
-workdir /tmp/src
+cd /tmp/src
 curl -L https://github.com/npm/npm/archive/v${NPM_VERSION}.tar.gz | \
     tar zxf - && \
     cd npm-${NPM_VERSION} && \
