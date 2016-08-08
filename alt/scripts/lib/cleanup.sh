@@ -2,7 +2,7 @@
 
 set -e
 # Autoremove any junk
-apt-get autoremove -y
+sudo apt-get autoremove -y
 
 # Clean out docs
 rm -rf /usr/share/doc /usr/share/doc-base /usr/share/man /usr/share/locale /usr/share/zoneinfo

@@ -32,7 +32,7 @@ ENV NVM_DIR /home/node/.nvm
 RUN . ~/.nvm/nvm.sh && nvm install $NODE_VERSION && nvm alias default $NODE_VERSION && npm install -g bower forever --user "node"
 
 #on container's boot the run script will update/install all required npm/bower packages for the app and run the app
-#ADD ./run_all.sh /run_all.sh
+ADD ./run_all.sh /run_all.sh
 
 
 ENV METEORD_DIR /opt/meteord
