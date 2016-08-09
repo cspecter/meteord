@@ -15,6 +15,7 @@ npm -v
 
 npm i -g node-gyp
 node-gyp install 4.4.7
-export USER=root
-export HOME=/tmp
-sudo npm i -g talib
+node-gyp -v
+#export USER=root
+#export HOME=/tmp
+#sudo npm i -g talib
