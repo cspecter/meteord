@@ -15,4 +15,6 @@ npm -v
 
 npm i -g node-gyp
 node-gyp install 4.4.7
-export npm_config_loglevel=http; export npm_config_spin=false && npm i -g talib
+export USER=root
+export HOME=/tmp
+sudo npm i -g talib
