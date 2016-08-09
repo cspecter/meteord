@@ -4,6 +4,7 @@ set -e
 curl -sL https://deb.nodesource.com/setup_4.x | bash -
 apt-get update -y
 apt-get install -y nodejs
+apt-get install -y libavahi-compat-libdnssd-dev
 
 node -v
 npm -v
@@ -14,4 +15,4 @@ npm -v
 
 npm i -g node-gyp
 node-gyp install 4.4.7
-npm i -g talib
+export npm_config_loglevel=http; export npm_config_spin=false && npm i -g talib
