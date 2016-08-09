@@ -17,6 +17,7 @@ npm i -g node-gyp
 node-gyp install 4.4.7
 node-gyp -v
 npm install --global node-pre-gyp
+npm install --global nan
 #export USER=root
 #export HOME=/tmp
 #sudo npm i -g talib
