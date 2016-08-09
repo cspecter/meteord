@@ -10,4 +10,4 @@ n stable
 
 npm i -g node-gyp
 node-gyp install
-npm i -g talib
+npm i talib
