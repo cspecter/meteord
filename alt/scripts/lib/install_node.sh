@@ -8,9 +8,9 @@ apt-get install -y nodejs
 node -v
 npm -v
 
-npm cache clean -f
-npm install -g n
-n stable
+#npm cache clean -f
+#npm install -g n
+#n stable
 
 npm i -g node-gyp
 node-gyp install 4.4.7
