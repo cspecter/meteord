@@ -1,6 +1,13 @@
 #!/bin/bash
 set -e
-nvm install 4.4.7
+
+curl -sL https://deb.nodesource.com/setup_4.x | bash -
+apt-get install -y nodejs
+
+npm cache clean -f
+npm install -g n
+n stable
+
 npm i -g node-gyp
-nope-gyp install
+node-gyp install
 npm i -g talib

@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM debian:jessie
 MAINTAINER Chad Specter
 
 ##use mirrors for faster apt downloads no matter where the machine that builds the image is
@@ -34,24 +34,24 @@ MAINTAINER Chad Specter
 ##on container's boot the run script will update/install all required npm/bower packages for the app and run the app
 #ADD ./run_all.sh /run_all.sh
 
-# Declare constants
-ENV NVM_VERSION v0.29.0
-ENV NODE_VERSION v5.0.0
-
-# Replace shell with bash so we can source files
-RUN rm /bin/sh && ln -s /bin/bash /bin/sh
-
-# Install pre-reqs
-RUN apt-get update
-RUN apt-get -y install curl build-essential
-
-# Install NVM
-RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | bash
-
-# Install NODE
-RUN source ~/.nvm/nvm.sh; \
-    nvm install $NODE_VERSION; \
-    nvm use --delete-prefix $NODE_VERSION;
+## Declare constants
+#ENV NVM_VERSION v0.29.0
+#ENV NODE_VERSION v5.0.0
+#
+## Replace shell with bash so we can source files
+#RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+#
+## Install pre-reqs
+#RUN apt-get update
+#RUN apt-get -y install curl build-essential
+#
+## Install NVM
+#RUN curl -o- https://raw.githubusercontent.com/creationix/nvm/${NVM_VERSION}/install.sh | bash
+#
+## Install NODE
+#RUN source ~/.nvm/nvm.sh; \
+#    nvm install $NODE_VERSION; \
+#    nvm use --delete-prefix $NODE_VERSION;
 
 ENV METEORD_DIR /opt/meteord
 COPY scripts $METEORD_DIR
