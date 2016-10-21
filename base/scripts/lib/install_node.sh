@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-NODE_VERSION=4.4.7
+NODE_VERSION=4.6.0
 NPM_VERSION=3.10.6
 NODE_ARCH=x64
 

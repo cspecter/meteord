@@ -14,7 +14,7 @@ npm -v
 #n stable
 
 npm i -g node-gyp
-node-gyp install 4.4.7
+node-gyp install 4.6.0
 node-gyp -v
 npm install --global node-pre-gyp
 npm install --global nan
