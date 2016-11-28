@@ -3,7 +3,7 @@ set -e
 
 curl -sL https://deb.nodesource.com/setup_4.x | bash -
 apt-get update -y
-apt-get install -y nodejs
+apt-get install -y nodejs nodejs-devel
 #apt-get install -y libavahi-compat-libdnssd-dev
 
 node -v
