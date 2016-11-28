@@ -13,6 +13,7 @@ npm -v
 #npm install -g n
 #n stable
 
+npm -g install npm@latest
 npm i -g node-gyp
 node-gyp install 4.6.0
 node-gyp -v
