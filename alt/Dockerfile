@@ -1,4 +1,4 @@
-FROM ubuntu:16.10
+FROM ubuntu:16.04
 MAINTAINER Chad Specter
 
 ##use mirrors for faster apt downloads no matter where the machine that builds the image is
