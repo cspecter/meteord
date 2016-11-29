@@ -18,7 +18,7 @@ npm i -g node-gyp
 node-gyp install 4.6.0
 node-gyp -v
 npm install --global node-pre-gyp
-npm install --global nan
+npm install --global nan got semver caw tar
 export npm_config_loglevel=http; export npm_config_spin=false
 #export USER=root
 #export HOME=/tmp
