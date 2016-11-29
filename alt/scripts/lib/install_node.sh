@@ -19,6 +19,7 @@ node-gyp install 4.6.0
 node-gyp -v
 npm install --global node-pre-gyp
 npm install --global nan
+export npm_config_loglevel=http; export npm_config_spin=false
 #export USER=root
 #export HOME=/tmp
 #sudo npm i -g talib
