@@ -1,22 +1,4 @@
 #!/usr/bin/env bash
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @cspecter
- Watch 6
-  Star 57
- Fork 277 kadirahq/meteord
-forked from meteorhacks/meteord
- Code  Issues 9  Pull requests 3  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathmeteord/binbuild/scripts/rebuild_npm_modules.sh
-e07274d  on May 8, 2015
-@arunoda arunoda Corrected paths
-1 contributor
-RawBlameHistory
-67 lines (59 sloc)  1.35 KB
 set -e
 gyp_rebuild_inside_node_modules () {
   for npmModule in ./*; do
