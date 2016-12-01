@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-curl -sL https://deb.nodesource.com/setup_6.x | bash -
+curl -sL https://deb.nodesource.com/setup_4.x | bash -
 apt-get update -y
 apt-get install -y nodejs
 
