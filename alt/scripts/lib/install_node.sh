@@ -11,7 +11,8 @@ npm -v
 
 npm -g install npm@latest
 npm i -g node-gyp
-node-gyp install 4.6.0
+npm explore npm -g -- npm install node-gyp@latest
+#node-gyp install 4.6.0
 node-gyp -v
 npm install --global node-pre-gyp
 #npm install --global nan got semver caw tar
