@@ -33,8 +33,8 @@ node -p process.versions
 
 echo "=> Executing NPM install within Bundle"
 cd $BUNDLE_DIR/bundle/programs/server/
+rm -rf ./node_modules
 npm i
-meteor npm i
 
 echo "=> Moving bundle"
 mv $BUNDLE_DIR/bundle /built_app
