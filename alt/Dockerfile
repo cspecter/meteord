@@ -6,9 +6,9 @@ COPY scripts $METEORD_DIR
 
 RUN bash $METEORD_DIR/init.sh
 
-ONBUILD ADD . /opt/meteor
+#ONBUILD ADD . /opt/meteor
 
-ONBUILD RUN cd /opt/meteor/programs/server \
+ONBUILD RUN cd /bundle/bundle/programs/server \
   && ([ -f package.json ] || npm init -f) \
   && npm i --loglevel=silent --unsafe-perm \
   && npm rebuild --update-binary
