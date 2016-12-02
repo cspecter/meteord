@@ -10,7 +10,6 @@ ONBUILD ADD . /opt/app
 
 ONBUILD RUN cd /opt/meteor/programs/server \
   && ([ -f package.json ] || npm init -f) \
-  && rm -rf ./node_modules \
   && npm i --loglevel=silent --unsafe-perm
 
 EXPOSE 80
