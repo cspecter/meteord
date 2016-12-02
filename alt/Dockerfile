@@ -6,7 +6,7 @@ COPY scripts $METEORD_DIR
 
 RUN bash $METEORD_DIR/init.sh
 
-ONBUILD ADD . /opt/app
+ONBUILD ADD . /opt/meteor
 
 ONBUILD RUN cd /opt/meteor/programs/server \
   && ([ -f package.json ] || npm init -f) \
