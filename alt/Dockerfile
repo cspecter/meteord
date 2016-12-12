@@ -4,6 +4,9 @@ MAINTAINER Chad Specter
 ENV METEORD_DIR /opt/meteord
 COPY scripts $METEORD_DIR
 
+ENV TZ=America/New_York
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
 RUN bash $METEORD_DIR/init.sh
 
 #ONBUILD ADD . /opt/meteor
