@@ -10,7 +10,7 @@ npm -v
 
 
 npm -g install npm@latest
-npm i -g node-gyp
+npm i -g node-gyp@latest
 npm explore npm -g -- npm install node-gyp@latest
 #node-gyp install 4.6.0
 node-gyp -v
