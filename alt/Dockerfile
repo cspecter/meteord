@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:16.10
 MAINTAINER Chad Specter
 
 ENV METEORD_DIR /opt/meteord
