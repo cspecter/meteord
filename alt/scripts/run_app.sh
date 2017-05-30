@@ -22,6 +22,7 @@ fi
 
 if [[ $REBUILD_NPM_MODULES ]]; then
     meteor npm install --save
+    meteor npm install --save talib
   if [ -f /opt/meteord/rebuild_npm_modules.sh ]; then
     cd programs/server
     bash /opt/meteord/rebuild_npm_modules.sh
