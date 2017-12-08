@@ -11,7 +11,7 @@ npm -v
 
 npm -g install npm@latest
 npm i -g node-gyp@latest
-npm explore npm -g -- npm install node-gyp@latest
+npm explore npm -g -- npm install node-gyp
 node-gyp -v
-npm install --global node-pre-gyp@latest
+npm install --global node-pre-gyp
 export npm_config_loglevel=http; export npm_config_spin=false
